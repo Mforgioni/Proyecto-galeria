@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="../imagenes/esucudo-favicon-icon.png">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <title>Cordoba Galery</title>
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary harder container-fluid">
+        <div class="container-fluid d-flex justify-content-start">
+            <a class="navbar-brand" href="#">
+                <img src="../imagenes/escudo-logo.png" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top harder-logo d-flex align-items-center">
+            </a>
+            <h1>Provincia de Cordoba</h1>
+        </div>
+    </nav>
+
+    <ul class="nav nav-tabs barra-navegacion">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Sitios de interes</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../paginas/ciudad.html">Cordoba ciudad</a></li>
+                <li><a class="dropdown-item" href="../paginas/interior.html">Ciudades del Interior</a></li>
+                <li><a class="dropdown-item" href="../paginas/sierras.html">Sierras y Lagos</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank"
+                href="https://www.cordobaturismo.gov.ar/region/capital/?gclid=CjwKCAjwxaanBhBQEiwA84TVXGJqpSw-zOMj9pj_zjqjakluoVWNFZrahNl7-0Rm7bNIpLFmA7l6qRoCwVQQAvD_BwE">Cordoba
+                Turismo</a>
+        </li>
+    </ul>
+
+    <div class="container text-center cuerpo-main-sierra-img">
+        <h2 class="texto-titulo"> Sierras y Diques de Cordoba:</h2>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/La-Cumbre-card.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">La cumbresita</h5>
+                        <p class="card-text">La Cumbrecita es una pequeña aldea de montaña en Córdoba, Argentina,
+                            conocida por su arquitectura alpina y sus hermosos paisajes naturales. Es un lugar ideal
+                            para el senderismo y el disfrute de la naturaleza.</p>
+
+                        <!-- Button modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalCentro">
+                            Abrir Galería
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalCentro" tabindex="-1" aria-labelledby="modalCentroLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalCentroLabel">Galería de Fotos</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <!-- Slider carrusel -->
+                                        <div id="carouselExample1" class="carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="../imagenes/la-cumbre-1.jpg" class="d-block w-100"
+                                                        alt="Foto La cumbrecita">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../imagenes/la-cumbre-2.jpg" class="d-block w-100"
+                                                        alt="Foto La cumbrecita">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../imagenes/la-cumbre-3.jpg" class="d-block w-100"
+                                                        alt="Foto La cumbrecita">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExample1" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExample1" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Acordion -->
+                                    <div class="modal-footer">
+                                        <div class="accordion" id="accordionCentro">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseCentro"
+                                                        aria-expanded="true" aria-controls="collapseCentro">
+                                                        Hermosos paisajes en verano y en invierno...
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseCentro" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionCentro">
+                                                    <div class="accordion-body">
+                                                        <p>La Cumbrecita es una pequeña aldea de montaña conocida por su
+                                                            arquitectura alpina y sus hermosos paisajes naturales.
+                                                            Algunos de los sitios de interés para visitar son el Parque
+                                                            Nacional Quebrada del Condorito, un espacio protegido que
+                                                            alberga una población de cóndores andinos; el Cerro Wank, un
+                                                            lugar popular para el senderismo con vistas panorámicas; y
+                                                            la Cascada Grande, una hermosa cascada accesible a través de
+                                                            un sendero boscoso. La aldea también es famosa por su
+                                                            gastronomía, con numerosos restaurantes que ofrecen platos
+                                                            tradicionales alemanes. ¡Un lugar lleno de encanto y belleza
+                                                            natural!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <!-- Cards 2 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/cuesta-card.jpeg" class="card-img-top" alt="Foto Nueva Cordoba">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuesta Blanca</h5>
+                        <p class="card-text">Cuesta Blanca es una tranquila localidad de Córdoba, Argentina, conocida
+                            por sus hermosas playas a lo largo del río San Antonio. Es un lugar ideal para disfrutar de
+                            la naturaleza y relajarse.</p>
+
+                        <!-- Button modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalNvaCordoba">
+                            Abrir Galería
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalNvaCordoba" tabindex="-1"
+                            aria-labelledby="modalNvaCordobaLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalNvaCordobaLabel">Galería de Fotos</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <!-- Slider carrusel -->
+                                        <div id="carouselExample2" class="carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="../imagenes/cuesta-1.jpg" class="d-block w-100"
+                                                        alt="Foto de Cuesta Blanca">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../imagenes/cuesta-2.jpg" class="d-block w-100"
+                                                        alt="Foto de Cuesta Blanca">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../imagenes/cuesta-3.jpg" class="d-block w-100"
+                                                        alt="Foto de Cuesta Blanca">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExample2" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExample2" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Acordion -->
+                                    <div class="modal-footer">
+                                        <div class="accordion" id="accordionNvaCordoba">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseNvaCordoba"
+                                                        aria-expanded="true" aria-controls="collapseNvaCordoba">
+                                                        Con sus hermosas playas, es una visita obligada....
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseNvaCordoba" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionNvaCordoba">
+                                                    <div class="accordion-body">
+                                                        <p>Cuesta Blanca es una tranquila localidad conocida por sus
+                                                            hermosas playas a lo largo del río San Antonio. Algunos de
+                                                            los sitios de interés para visitar son la Playa de los
+                                                            Hippies, un lugar popular para relajarse y disfrutar del
+                                                            sol; el Balneario Municipal, que ofrece instalaciones para
+                                                            picnics y barbacoas; y el Parque Recreativo y Laberinto El
+                                                            Descanso, un espacio verde con un laberinto de setos para
+                                                            explorar. La localidad también es famosa por su gastronomía,
+                                                            con numerosos restaurantes que ofrecen platos tradicionales
+                                                            argentinos. ¡Un lugar ideal para disfrutar de la naturaleza
+                                                            y relajarse!.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <!-- Cards 3 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/aromos-card.jpg" class="card-img-top" alt="Foto Guemes">
+                    <div class="card-body">
+                        <h5 class="card-title">Villa Los aromos</h5>
+                        <p class="card-text">Villa Los Aromos es una encantadora localidad de Córdoba, Argentina,
+                            conocida por su belleza natural y su tranquilo ambiente. Se encuentra a orillas del río
+                            Anisacate, ideal para actividades acuáticas.</p>
+                        <!-- Button modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalBarrioGuemes">
+                            Abrir Galería
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalBarrioGuemes" tabindex="-1"
+                            aria-labelledby="modalBarrioGuemesLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalBarrioGuemesLabel">Galería
+                                            de Fotos</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <!-- Slider carrusel -->
+                                        <div id="carouselExample3" class="carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="../imagenes/aromos-1.jpeg" class="d-block w-100"
+                                                        alt="Foto Villa los Aromos">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../imagenes/aromos-2.jpg" class="d-block w-100"
+                                                        alt="Foto Villa los Aromos">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../imagenes/aromos-3.jpg" class="d-block w-100"
+                                                        alt="Foto Villa los Aromos">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExample3" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExample3" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Acordion -->
+                                    <div class="modal-footer">
+                                        <div class="accordion" id="accordionBarrioGuemes">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseBarrioGuemes"
+                                                        aria-expanded="true" aria-controls="collapseBarrioGuemes">
+                                                        Hermosa Localidad en la naturaleza...
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseBarrioGuemes" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionBarrioGuemes">
+                                                    <div class="accordion-body">
+                                                        <p>Villa Los Aromos es una encantadora localidad conocida por su
+                                                            belleza natural y su tranquilo ambiente. Se encuentra a
+                                                            orillas del río Anisacate, ideal para actividades acuáticas.
+                                                            Puedes visitar el Balneario Municipal, que ofrece
+                                                            instalaciones para picnics y barbacoas; el Museo de la
+                                                            Memoria, que alberga una colección de objetos históricos y
+                                                            culturales; y el Mirador del Cerro, que ofrece una vista
+                                                            panorámica de la localidad y el valle. La localidad también
+                                                            es famosa por su gastronomía, con numerosos restaurantes que
+                                                            ofrecen platos típicos de la zona. ¡Un lugar ideal para
+                                                            disfrutar de la naturaleza y relajarse! 😊</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-centers contenedor-extra">
+            <!-- Cards 4 -->
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../imagenes/San-r-card.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dique San Roque</h5>
+                            <p class="card-text">El Dique San Roque es un embalse en Córdoba, Argentina, conocido por su
+                                belleza natural. Es un lugar popular para actividades acuáticas y ofrece impresionantes
+                                vistas panorámicas.</p>
+
+                            <!-- Button modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalMuseo">
+                                Abrir Galería
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalMuseo" tabindex="-1" aria-labelledby="modalMuseoLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalMuseoLabel">Galería de Fotos</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <!-- Slider carrusel -->
+                                            <div id="carouselExample" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="../imagenes/san-r1.jpg" class="d-block w-100"
+                                                            alt="Foto de La Calera">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../imagenes/san-r2.jpg" class="d-block w-100"
+                                                            alt="Foto de La Calera">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../imagenes/san-r3.jpg" class="d-block w-100"
+                                                            alt="Foto de La Calera">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Acordion -->
+                                        <div class="modal-footer">
+                                            <div class="accordion" id="accordionCentro">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseCentro"
+                                                            aria-expanded="true" aria-controls="collapseCentro">
+                                                            El imponente enbudo y el nuevo puente...
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCentro" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionCentro">
+                                                        <div class="accordion-body">
+                                                            <p>El Dique San Roque es un embalse en Córdoba, Argentina,
+                                                                conocido por su belleza natural. La construcción del
+                                                                dique comenzó en 1884 y se completó en 1891. Es un lugar
+                                                                popular para actividades acuáticas y ofrece
+                                                                impresionantes vistas panorámicas. El dique también es
+                                                                famoso por la Presa San Roque, la más antigua de
+                                                                Argentina, y el Museo de la Presa San Roque, que cuenta
+                                                                la historia de la construcción del dique. ¡Un lugar
+                                                                lleno de historia y belleza natural! 😊</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <!-- Cards 5 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="../imagenes/p-mora-card.jpg" class="card-img-top" alt="Foto Nueva Cordoba">
+                        <div class="card-body">
+                            <h5 class="card-title">Dique Piedras Moras</h5>
+                            <p class="card-text">El Dique Piedras Moras es un embalse en Córdoba, Argentina, conocido
+                                por su belleza natural y sus actividades acuáticas. Es un lugar ideal para disfrutar de
+                                la naturaleza y relajarse.</p>
+                            <!-- Button modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalIglesia">
+                                Abrir Galería
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalIglesia" tabindex="-1"
+                                aria-labelledby="modalNvaCordobaLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalIglesiaLabel">Galería de Fotos</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <!-- Slider carrusel -->
+                                            <div id="carouselExample4" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="../imagenes/p-mora-1.jpeg" class="d-block w-100"
+                                                            alt="Fotos de Cosquin">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../imagenes/p-mora-2.jpeg" class="d-block w-100"
+                                                            alt="Fotos de Cosquin">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../imagenes/p-mora-3.jpg" class="d-block w-100"
+                                                            alt="Fotos de Cosquin">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample4" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample4" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Acordion -->
+                                        <div class="modal-footer">
+                                            <div class="accordion" id="accordionNvaCordobas">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseNvaCordobas" aria-expanded="true"
+                                                            aria-controls="collapseNvaCordoba">
+                                                            Formando el bello de la novia cuando esta lleno es
+                                                            imponente...
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseNvaCordobas" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionNvaCordobas">
+                                                        <div class="accordion-body">
+                                                            <p>El Dique Piedras Moras es un embalse en Córdoba,
+                                                                Argentina, conocido por su belleza natural y sus
+                                                                actividades acuáticas. La construcción del dique comenzó
+                                                                en 1979 y se completó en 1981. Es un lugar popular para
+                                                                actividades acuáticas y ofrece impresionantes vistas
+                                                                panorámicas. El dique también es famoso por su Club
+                                                                Náutico Piedras Moras, que ofrece una variedad de
+                                                                actividades acuáticas para disfrutar. ¡Un lugar lleno de
+                                                                historia y belleza natural! 😊</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <!-- Cards 6 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="../imagenes/cajon-card.jpg" card-img-top" alt="Foto Guemes">
+                        <div class="card-body">
+                            <h5 class="card-title">Dique el cajon</h5>
+                            <p class="card-text">El Dique El Cajón es un embalse en Córdoba, Argentina, conocido por su
+                                belleza natural y sus actividades acuáticas. Es un lugar ideal para disfrutar de la
+                                naturaleza y relajarse.</p>
+                            <!-- Button modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalBarrioGuemesss">
+                                Abrir Galería
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalBarrioGuemesss" tabindex="-1"
+                                aria-labelledby="modalBarrioGuemesssLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalBarrioGuemesssLabel">Galería
+                                                de Fotos</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <!-- Slider carrusel -->
+                                            <div id="carouselExample6" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="../imagenes/cajpn-1.jpg" class="d-block w-100"
+                                                            alt="Foto Villa Maria">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../imagenes/cajpn-2.jpg" class="d-block w-100"
+                                                            alt="Foto Villa Maria">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../imagenes/cajon-3.JPG" class="d-block w-100"
+                                                            alt="Foto Villa Maria">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample6" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample6" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Acordion -->
+                                        <div class="modal-footer">
+                                            <div class="accordion" id="arrioaccordionBGuemesss">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseBarrioGuemesss"
+                                                            aria-expanded="true" aria-controls="collapseBarrioGuemesss">
+                                                            Con su misteriosa piramide energetica y hermoso pasisaje de
+                                                            altura...
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseBarrioGuemesss" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionBarrioGuemesss">
+                                                        <div class="accordion-body">
+                                                            <p>El Dique El Cajón, también conocido como Embalse Heralio
+                                                                Argañaraz, se ubica en el centro oeste de la provincia
+                                                                de Córdoba, Argentina, cerca de la localidad de Capilla
+                                                                del Monte. Aunque los inicios de la obra datan de 1969,
+                                                                su construcción se llevó a cabo entre 1987 y 1993. Este
+                                                                embalse intercepta el curso del río Dolores y cumple
+                                                                múltiples funciones: actúa como reservorio de agua
+                                                                dulce, regula el caudal del río y es un popular sitio
+                                                                para actividades recreativas.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="container d-flex justify-content-evenly index-footer">
+            <a href="https://www.instagram.com/explore/locations/2217880995142312/cordoba-capital-argentina/?hl=es"
+                target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"> Istagram</i>
+            </a>
+            <a href="https://www.facebook.com/cordobaayuda.capital/?locale=es_LA" target="_blank"
+                rel="noopener noreferrer">
+                <i class="bi bi-facebook"> Facebook</i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+543514348260" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-whatsapp"> 0351-4348270</i>
+            </a>
+            <a href="mailto:correo@example.com?subject=Asunto%20del%20correo">
+                <i class="bi bi-envelope-at"> cordoba-turismo@gmail.com</i>
+            </a>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

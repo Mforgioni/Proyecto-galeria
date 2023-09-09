@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="../imagenes/esucudo-favicon-icon.png">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <title>Cordoba Galery</title>
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary harder container-fluid">
+        <div class="container-fluid d-flex justify-content-start">
+            <a class="navbar-brand" href="#">
+                <img src="../imagenes/escudo-logo.png" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top harder-logo d-flex align-items-center">
+            </a>
+            <h1>Provincia de Cordoba</h1>
+        </div>
+    </nav>
+
+
+    <ul class="nav nav-tabs barra-navegacion">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Sitios de interes</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../paginas/ciudad.html">Cordoba ciudad</a></li>
+                <li><a class="dropdown-item" href="../paginas/interior.html">Ciudades del Interior</a></li>
+                <li><a class="dropdown-item" href="../paginas/sierras.html">Sierras y Lagos</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank"
+                href="https://www.cordobaturismo.gov.ar/region/capital/?gclid=CjwKCAjwxaanBhBQEiwA84TVXGJqpSw-zOMj9pj_zjqjakluoVWNFZrahNl7-0Rm7bNIpLFmA7l6qRoCwVQQAvD_BwE">Cordoba
+                Turismo</a>
+        </li>
+    </ul>
+
+    <div class="container text-center cuerpo-main-img">
+        <h2 class="texto-titulo"> Ciudades del Interior:</h2>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/c-paz-card.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Villa Carlos Paz</h5>
+                        <p class="card-text">Villa Carlos Paz es una ciudad en la provincia de Córdoba, Argentina,
+                            ubicada en las Sierras de Córdoba. Es un importante centro turístico, conocido por su clima
+                            agradable, paisajes atractivos y vibrante vida nocturna.</p>
+
+                        <!-- Button modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalCentro">
+                            Abrir Galería
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalCentro" tabindex="-1" aria-labelledby="modalCentroLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalCentroLabel">Galería de Fotos</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <!-- Slider carrusel -->
+                                        <div id="carouselExample1" class="carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="../imagenes/c-paz-1.jpg" class="d-block w-100"
+                                                        alt="Foto Carlos Paz">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../imagenes/c-paz-3.jpg" class="d-block w-100"
+                                                        alt="Foto Carlos Paz">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../imagenes/c-paz-2.jpg" class="d-block w-100"
+                                                        alt="Foto Carlos Paz">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExample1" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExample1" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Acordion -->
+                                    <div class="modal-footer">
+                                        <div class="accordion" id="accordionCentro">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseCentro"
+                                                        aria-expanded="true" aria-controls="collapseCentro">
+                                                        La perla de Cordoba...
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseCentro" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionCentro">
+                                                    <div class="accordion-body">
+                                                        <p>Villa Carlos Paz es un destino turístico destacado. El Cerro
+                                                            de la Cruz ofrece una vista panorámica impresionante. El
+                                                            Reloj Cu Cú es uno de los emblemas turísticos de la ciudad.
+                                                            El Parque Estancia La Quinta es una reserva natural que
+                                                            conserva el patrimonio jesuítico y arqueológico. La
+                                                            Costanera, un recorrido vehicular-peatonal, ofrece vistas
+                                                            bellísimas del lago y las montañas. ¡Una ciudad llena de
+                                                            encanto y belleza natural!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <!-- Cards 2 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/la-falda-card.jpg" class="card-img-top" alt="Foto Nueva Cordoba">
+                    <div class="card-body">
+                        <h5 class="card-title">La Falda</h5>
+                        <p class="card-text">La Falda, ubicada en las Sierras de Córdoba, Argentina, es un destino
+                            turístico destacado. Con su especial microclima, es perfecta para paseos en bici y caminatas
+                        </p>
+
+                        <!-- Button modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalNvaCordoba">
+                            Abrir Galería
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalNvaCordoba" tabindex="-1"
+                            aria-labelledby="modalNvaCordobaLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalNvaCordobaLabel">Galería de Fotos</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <!-- Slider carrusel -->
+                                        <div id="carouselExample2" class="carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="../imagenes/la-falda-1.jpg" class="d-block w-100"
+                                                        alt="Foto de La falda">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../imagenes/La-Falda-2.jpg" class="d-block w-100"
+                                                        alt="Foto de La falda">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../imagenes/la-falda-3.jpg" class="d-block w-100"
+                                                        alt="Foto de La falda">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExample2" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExample2" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Acordion -->
+                                    <div class="modal-footer">
+                                        <div class="accordion" id="accordionNvaCordoba">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseNvaCordoba"
+                                                        aria-expanded="true" aria-controls="collapseNvaCordoba">
+                                                        Sobre la Falda...
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseNvaCordoba" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionNvaCordoba">
+                                                    <div class="accordion-body">
+                                                        <p>La Falda es un destino turístico destacado con una gran
+                                                            cantidad de atractivos. El Cerro La Banderita ofrece vistas
+                                                            panorámicas impresionantes. El Reloj Cu Cú es un emblema
+                                                            turístico de la ciudad. El Parque Estancia La Quinta es una
+                                                            reserva natural con patrimonio jesuítico y arqueológico. La
+                                                            Costanera ofrece vistas bellísimas del lago y las montañas.
+                                                            El complejo recreativo Siete Cascadas es perfecto para
+                                                            disfrutar en familia. Además, la ciudad es conocida por sus
+                                                            festivales como el Festival Nacional de Tango, la Fiesta
+                                                            Nacional del Alfajor, y La Falda Bajo Las Estrellas.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <!-- Cards 3 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/santa-rosa.card.jpg" class="card-img-top" alt="Foto Guemes">
+                    <div class="card-body">
+                        <h5 class="card-title">Santa Rosa de Calamuchita</h5>
+                        <p class="card-text">Santa Rosa de Calamuchita es una ciudad en el corazón del Valle de
+                            Calamuchita, rodeada de sierras y con un clima mediterráneo. El río Santa Rosa atraviesa la
+                            ciudad, ofreciendo hermosas playas y balnearios. Es un importante destino turístico.</p>
+                        <!-- Button modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalBarrioGuemes">
+                            Abrir Galería
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalBarrioGuemes" tabindex="-1"
+                            aria-labelledby="modalBarrioGuemesLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalBarrioGuemesLabel">Galería
+                                            de Fotos</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <!-- Slider carrusel -->
+                                        <div id="carouselExample3" class="carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="../imagenes/santa-rosa-1.jpg" class="d-block w-100"
+                                                        alt="Foto Santa Rosa">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../imagenes/santa-rosa2.jpg" class="d-block w-100"
+                                                        alt="Foto Santa Rosa">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../imagenes/santa-rosa-3.jpg" class="d-block w-100"
+                                                        alt="Foto Santa Rosa">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExample3" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExample3" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Acordion -->
+                                    <div class="modal-footer">
+                                        <div class="accordion" id="accordionBarrioGuemes">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseBarrioGuemes"
+                                                        aria-expanded="true" aria-controls="collapseBarrioGuemes">
+                                                        Una ciudad para la juventud y la naturaleza....
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseBarrioGuemes" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionBarrioGuemes">
+                                                    <div class="accordion-body">
+                                                        <p>Santa Rosa de Calamuchita es un destino turístico destacado
+                                                            en el Valle de Calamuchita. El río Santa Rosa atraviesa la
+                                                            ciudad, ofreciendo hermosas playas y balnearios. Puedes
+                                                            visitar la Playa de Santa Rosa de Calamuchita, la Parroquia
+                                                            Santa Rosa de Lima, la Reserva Natural La Cascada, y el El
+                                                            Torreón, un lugar divertido para pasar un día en familia. El
+                                                            Puente Colgante es una atracción tradicional que no debes
+                                                            dejar de visitar</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-centers contenedor-extra">
+            <!-- Cards 4 -->
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../imagenes/la-calera.card.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">La Calera</h5>
+                            <p class="card-text">La Calera es una ciudad de la provincia de Córdoba, Argentina, conocida
+                                como “Portal de las sierras chicas”. Se ubica en la zona de contacto del piedemonte
+                                oriental de las Sierras Chicas con la Llanura Pampeana. Es famosa por sus yacimientos de
+                                piedra caliza</p>
+
+                            <!-- Button modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalMuseo">
+                                Abrir Galería
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalMuseo" tabindex="-1" aria-labelledby="modalMuseoLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalMuseoLabel">Galería de Fotos</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <!-- Slider carrusel -->
+                                            <div id="carouselExample" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="../imagenes/la-calera-1.jpg" class="d-block w-100"
+                                                            alt="Foto de La Calera">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../imagenes/la-calera-2.jpg" class="d-block w-100"
+                                                            alt="Foto de La Calera">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../imagenes/la-calera-3.jpeg" class="d-block w-100"
+                                                            alt="Foto de La Calera">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Acordion -->
+                                        <div class="modal-footer">
+                                            <div class="accordion" id="accordionCentro">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseCentro"
+                                                            aria-expanded="true" aria-controls="collapseCentro">
+                                                            Una vecina de la ciudad de Cordoba...
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCentro" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionCentro">
+                                                        <div class="accordion-body">
+                                                            <p>La Calera, en Córdoba, Argentina, es un destino turístico
+                                                                con varios atractivos. Puedes visitar la Capilla Vieja,
+                                                                edificada en 1727 por la Compañía de Jesús1. Cerca de
+                                                                allí, se encuentra el Molino Doble, construido en 17761.
+                                                                Otro lugar de interés es el Dique Mal Paso, que destaca
+                                                                por su importancia histórica. Además, puedes visitar el
+                                                                Museo de la Cal, que ilustra sobre la historia de la
+                                                                extracción de cal en la zona2. ¡Un lugar lleno de
+                                                                historia y belleza natural</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <!-- Cards 5 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="../imagenes/cosquin-card.jpg" class="card-img-top" alt="Foto Nueva Cordoba">
+                        <div class="card-body">
+                            <h5 class="card-title">Cosquin</h5>
+                            <p class="card-text">Cosquín, en la provincia de Córdoba, Argentina, es famosa por su
+                                Festival Nacional de Folklore, el evento de música folklórica más grande del país. La
+                                ciudad está rodeada de belleza natural, con el río Cosquín que la atraviesa.</p>
+                            <!-- Button modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalIglesia">
+                                Abrir Galería
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalIglesia" tabindex="-1"
+                                aria-labelledby="modalNvaCordobaLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalIglesiaLabel">Galería de Fotos</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <!-- Slider carrusel -->
+                                            <div id="carouselExample4" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="../imagenes/cosquin-1.jpg" class="d-block w-100"
+                                                            alt="Fotos de Cosquin">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../imagenes/cosquin-2.jpg" class="d-block w-100"
+                                                            alt="Fotos de Cosquin">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../imagenes/cosquin-3.jpg" class="d-block w-100"
+                                                            alt="Fotos de Cosquin">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample4" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample4" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Acordion -->
+                                        <div class="modal-footer">
+                                            <div class="accordion" id="accordionNvaCordobas">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseNvaCordobas" aria-expanded="true"
+                                                            aria-controls="collapseNvaCordoba">
+                                                            Una ciudad de Festival y Rock...
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseNvaCordobas" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionNvaCordobas">
+                                                        <div class="accordion-body">
+                                                            <p>Cosquín es famosa por su Festival Nacional de Folklore,
+                                                                el evento de música folklórica más grande del país. El
+                                                                río Cosquín, que atraviesa la ciudad, ofrece hermosas
+                                                                playas y balnearios. Puedes visitar la Plaza Próspero
+                                                                Molina, donde se celebra el festival, y el Museo
+                                                                Arqueológico Argentino Ambato, que alberga una colección
+                                                                de artefactos históricos. ¡Un lugar lleno de cultura y
+                                                                belleza natural!</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <!-- Cards 6 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="../imagenes/vm-card.jpg" class="card-img-top" alt="Foto Guemes">
+                        <div class="card-body">
+                            <h5 class="card-title">Villa Maria</h5>
+                            <p class="card-text">Villa María es una ciudad en la provincia de Córdoba, Argentina,
+                                conocida por su Festival Nacional de Peñas, uno de los eventos de música folklórica más
+                                grandes del país. La ciudad también es famosa por su rica historia y su vibrante vida
+                                cultural..</p>
+                            <!-- Button modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalBarrioGuemesss">
+                                Abrir Galería
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalBarrioGuemesss" tabindex="-1"
+                                aria-labelledby="modalBarrioGuemesssLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalBarrioGuemesssLabel">Galería
+                                                de Fotos</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <!-- Slider carrusel -->
+                                            <div id="carouselExample6" class="carousel slide">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="../imagenes/vm-1.jpg" class="d-block w-100"
+                                                            alt="Foto Villa Maria">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../imagenes/vm-2.jpeg" class="d-block w-100"
+                                                            alt="Foto Villa Maria">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../imagenes/vm-3.jpg" class="d-block w-100"
+                                                            alt="Foto Villa Maria">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExample6" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExample6" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Acordion -->
+                                        <div class="modal-footer">
+                                            <div class="accordion" id="arrioaccordionBGuemesss">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseBarrioGuemesss"
+                                                            aria-expanded="true" aria-controls="collapseBarrioGuemesss">
+                                                            La segunda ciudad mas poblada de la provincia...
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseBarrioGuemesss" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionBarrioGuemesss">
+                                                        <div class="accordion-body">
+                                                            <p>Villa María es conocida por su Festival Nacional de
+                                                                Peñas, uno de los eventos de música folklórica más
+                                                                grandes del país. La ciudad también es famosa por su
+                                                                rica historia y su vibrante vida cultural. Algunos de
+                                                                los sitios de interés para visitar son el Museo
+                                                                Histórico Regional, un espacio que conserva y difunde el
+                                                                patrimonio histórico, cultural y natural de la ciudad;
+                                                                el Parque de la Vida, un lugar ideal para disfrutar de
+                                                                la naturaleza, el deporte y el ocio; el Teatro Verdi, un
+                                                                edificio emblemático que alberga espectáculos artísticos
+                                                                y culturales; y la Plaza Centenario, el corazón de la
+                                                                ciudad, donde se encuentran la Catedral, el Palacio
+                                                                Municipal y el Monumento a la Libertad. ¡Una ciudad
+                                                                llena de historia, cultura y diversión!</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="container d-flex justify-content-evenly index-footer">
+            <a href="https://www.instagram.com/explore/locations/2217880995142312/cordoba-capital-argentina/?hl=es"
+                target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"> Istagram</i>
+            </a>
+            <a href="https://www.facebook.com/cordobaayuda.capital/?locale=es_LA" target="_blank"
+                rel="noopener noreferrer">
+                <i class="bi bi-facebook"> Facebook</i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+543514348260" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-whatsapp"> 0351-4348270</i>
+            </a>
+            <a href="mailto:correo@example.com?subject=Asunto%20del%20correo">
+                <i class="bi bi-envelope-at"> cordoba-turismo@gmail.com</i>
+            </a>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
