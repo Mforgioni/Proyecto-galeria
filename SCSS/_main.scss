@@ -1,0 +1,99 @@
+.main-fondo {
+    background-image: url(../imagenes/foto\ cordoba\ aerea.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
+    height: auto;
+  }
+  
+  .main-encabezado {
+    h2 {
+      font-size: 2.5rem;
+      padding: 0.5rem;
+      color: rgb(247, 240, 205);
+    }
+  
+    h3 {
+      font-weight: bold;
+      font-size: 1.6rem;
+      margin: 1rem;
+      margin-bottom: 3rem;
+      color: rgb(247, 240, 205);
+    }
+  }
+  
+  .main-descripcion p {
+    font-size: 1.2rem;
+    padding: 0 14rem 1rem 14rem;
+    font-weight: bold;
+    color: rgb(226, 226, 187);
+  }
+
+  
+  /*_____________Pagina Ciudad_________________*/
+
+.texto-titulo {
+    text-align: start;
+    padding: 1rem;
+  }
+  
+  .ciudad-cuerpo {
+    background-image: url(../imagenes/calle-chacabuco.jpg);
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 0;
+    color: white;
+  
+    h2 {
+      background-color: rgba(0, 0, 0, 0.541);
+    }
+  }
+  
+  .contenedor-extra {
+    margin-left: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+/*_____________Pagina Ciudades del Interior_________________*/
+
+.cuerpo-main-img {
+    background-image: url(../imagenes/fondo-ciudades-del-interior.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    color: white;
+  
+    h2 {
+      background-color: rgba(0, 0, 0, 0.541);
+    }
+  }
+
+  /*_____________Pagina sierras y Diques_________________*/
+
+.cuerpo-main-sierra-img {
+    background-image: url(../imagenes/sierras-fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    color: white;
+  
+    h2 {
+      background-color: rgba(0, 0, 0, 0.541);
+    }
+  }
+  
+    

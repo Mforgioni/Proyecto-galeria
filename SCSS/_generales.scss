@@ -1,0 +1,30 @@
+.row {
+    border: solid 2px rgba(148, 1, 1, 0);
+    padding: 5px;
+  }
+  
+  .col {
+    border: solid 2px rgba(14, 133, 14, 0);
+    padding: 5px;
+  }
+  
+  .modal-content {
+    background-color: rgb(146, 197, 245);
+    border: solid black 1px;
+  }
+  
+  .card {
+    background-color: rgba(140, 140, 236, 0.884);
+    border: solid 4px rgb(101, 101, 173);
+    border-radius: 12px;
+  
+    img {
+      padding: 0.4rem;
+      border-radius: 10px;
+    }
+  }
+  
+  .accordion-button, .accordion {
+    background-color: rgba(71, 71, 235, 0.849);
+    color: white;
+  }

@@ -1,0 +1,73 @@
+@media (max-width: 768px) {
+    .harder-logo {
+      height: 6rem;
+      width: 6rem;
+    }
+  
+    .harder h1 {
+      font-size: 1.7rem;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .harder-logo {
+      height: 5rem;
+      width: 5rem;
+      padding: 0.5rem;
+    }
+  
+    .harder h1 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav a, ul {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav a, ul {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-encabezado {
+      h2 {
+        font-size: 2rem;
+        padding: 0.3rem;
+      }
+  
+      h3 {
+        font-size: 1rem;
+        margin: 0.7rem;
+        margin-bottom: 1.3rem;
+      }
+    }
+  
+    .main-descripcion p {
+      font-size: 1rem;
+      padding: 0 6rem 1rem 6rem;
+    }
+
+    .main-descripcion p {
+        font-size: 0.7rem;
+        padding: 0 2rem 0.3rem 2rem;
+      }
+  }
+  @media (max-width: 550px) {
+    .main-encabezado h2 {
+      font-size: 1.3rem;
+      padding: 0.3rem;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .index-footer a {
+      font-size: 0.6rem;
+    }
+  }
+  
+  
